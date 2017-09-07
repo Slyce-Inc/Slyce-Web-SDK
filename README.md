@@ -14,11 +14,10 @@
 ```
 
 ### AMD, CommonJS2, etc...
-For use websdk as AMD or CommonJS2 module you need to download webSDK, add it to the local project and use it as normal module.
+For using the Web SDK as AMD or CommonJS2 module, the SDK has to be downloaded and used as a normal module, add it to the local project and use it as normal module.
 
-js - https://cdnw.slycecloud.com/websdk/1.1.0/slyce.ui.sdk.js
-
-css - https://cdnw.slycecloud.com/websdk/1.1.0/slyce.sdk.css
+js - https://cdnw.slycecloud.com/websdk/1.1.0/slyce.ui.sdk.js
+css - https://cdnw.slycecloud.com/websdk/1.1.0/slyce.sdk.css
 
 Example code - 
 ```javascript
