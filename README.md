@@ -1,12 +1,12 @@
 # Getting started
 
-# Non-ui version
+# ui version
 
 ## Loading
 
 ### Standart method
 ```html
-<script type="text/javascript" src="https://cdnw.slycecloud.com/websdk/1.1.0/slyce.sdk.js"></script>
+<script type="text/javascript" src="https://cdnw.slycecloud.com/websdk/1.1.0/slyce.ui.sdk.js"></script>
 <link rel="stylesheet" href="https://cdnw.slycecloud.com/websdk/1.1.0/slyce.sdk.css">
 ```
 ```javascript
@@ -14,8 +14,15 @@
 ```
 
 ### AMD, CommonJS2, etc...
+For use websdk as AMD or CommonJS2 module you need to download webSDK, add it to the local project and use it as normal module.
+
+js - https://cdnw.slycecloud.com/websdk/1.1.0/slyce.ui.sdk.js
+
+css - https://cdnw.slycecloud.com/websdk/1.1.0/slyce.sdk.css
+
+Example code - 
 ```javascript
- var slyceSDK = require('../dist/slyce.sdk');
+ var slyceSDK = require('./slycesdk/slyce.sdk');
  var sdk = new slyceSDK();
 ```
 
