@@ -6,8 +6,8 @@
 
 ### Standart method
 ```html
-<script type="text/javascript" src="../dist/slyce.ui.sdk.js"></script>
-<link rel="stylesheet" href="../dist/slyce.ui.css">
+<script type="text/javascript" src="https://cdnw.slycecloud.com/websdk/1.1.0/slyce.sdk.js"></script>
+<link rel="stylesheet" href="https://cdnw.slycecloud.com/websdk/1.1.0/slyce.sdk.css">
 ```
 ```javascript
  var sdk = new window.slyceSDK();
