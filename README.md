@@ -6,21 +6,21 @@
 
 ### Standart method
 ```html
-<script type="text/javascript" src="https://cdnw.slycecloud.com/websdk/1.2.0/slyce.ui.sdk.js"></script>
-<link rel="stylesheet" href="https://cdnw.slycecloud.com/websdk/1.2.0/slyce.sdk.css">
+<script type="text/javascript" src="https://cdnw.slycecloud.com/websdk/1.3.0/slyce.ui.sdk.js"></script>
+<link rel="stylesheet" href="https://cdnw.slycecloud.com/websdk/1.3.0/slyce.sdk.css">
 ```
 ```javascript
  var sdk = new window.slyceSDK();
 ```
 
 ### AMD, CommonJS2, etc...
-For using the Web SDK as AMD or CommonJS2 module, the SDK has to be downloaded and used as a normal module, add it to the local project and use it as normal module.
+For use websdk as AMD or CommonJS2 module you need to download webSDK, add it to the local project and use it as normal module.
 
-js - https://cdnw.slycecloud.com/websdk/1.2.0/slyce.ui.sdk.js
+js - https://cdnw.slycecloud.com/websdk/1.3.0/slyce.ui.sdk.js
 
-css - https://cdnw.slycecloud.com/websdk/1.2.0/slyce.sdk.css
+css - https://cdnw.slycecloud.com/websdk/1.3.0/slyce.sdk.css
 
-Example code - 
+Example code -
 ```javascript
  var slyceSDK = require('./slycesdk/slyce.sdk');
  var sdk = new slyceSDK();
@@ -61,12 +61,13 @@ sdk.init(id).then(function(data) {
 });
 ```
 
-### recognitionByUrl(url, callbackProgress, isUI = true)
+### recognitionByUrl(url, callbackProgress, options, isUI = true)
 call to exact match as well as 3D search (sent simultaneously)
 
 #### Params
 1. url - image url
 2. callbackProgress - function which called when status changed
+3. options - options for foundation serach. If you do not need this use **null**
 
 #### Result
 Method return native promise object
@@ -85,13 +86,14 @@ sdk.recognitionByUrl(url,  function(data) {
 });
 ```
 
-### recognitionByFile(file, callbackProgress, isUI = true)
+### recognitionByFile(file, callbackProgress, options, isUI = true)
 Rotate, resize and upload image to amazon s3 and then run **recognitionByUrl** method
 
 #### Params
 1. file - File, received by <input type="file">
 2. canvas - canvas DOM element. If you do not need rotate and resize use **null**
-3. callbackProgress - function which called when status changed
+3. options - options for foundation serach. If you do not need this use **null**
+4. callbackProgress - function which called when status changed
 #### Result
 Same with **recognitionByUrl**
 
@@ -143,7 +145,6 @@ sdk.getSimilar(pid, url).then(function(data) {
    console.log(data); // Error('Products not found')
 });
 ```
-
 
 
 ### progressClose()
