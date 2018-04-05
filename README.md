@@ -67,7 +67,7 @@ call to exact match as well as 3D search (sent simultaneously)
 #### Params
 1. url - image url
 2. callbackProgress - function which called when status changed
-3. options - options for foundation search. If you do not need this use **null**
+3. options - options for image search. If not required - use **null**
 
 #### Result
 Method return native promise object
@@ -92,7 +92,7 @@ Rotate, resize and upload image to amazon s3 and then run **recognitionByUrl** m
 #### Params
 1. file - File, received by <input type="file">
 2. canvas - canvas DOM element. If you do not need rotate and resize use **null**
-3. options - options for foundation search. If you do not need this use **null**
+3. options - options for image search. If not required - use **null**
 4. callbackProgress - function which called when status changed
 #### Result
 Same with **recognitionByUrl**
